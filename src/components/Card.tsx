@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import {type  ReactNode } from 'react';
 import styles from '../pages/LicenseManagement.module.css';
 
 type CardProps = {
@@ -7,7 +7,7 @@ type CardProps = {
   footer?: ReactNode;
   className?: string;
   onClick?: () => void;
-};
+};  
 
 const Card = ({ header, body, footer, className = '', onClick }: CardProps) => {
   return (
