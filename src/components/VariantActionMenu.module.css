@@ -1,0 +1,8 @@
+td:has(.noPaddingParent) {
+  padding: 0 !important;
+}
+
+.border-x {
+  border-left: 1px solid var(--border, --bosch-gray-80);
+  border-right: 1px solid var(--border, --bosch-gray-80);
+}

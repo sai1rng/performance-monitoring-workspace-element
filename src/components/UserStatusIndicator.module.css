@@ -1,0 +1,7 @@
+.statusIndicatorGray {
+  background-color: var(--bosch-gray-50);
+}
+
+.statusIndicatorGreen {
+  background-color: var(--bosch-green-50);
+}

@@ -1,0 +1,88 @@
+/* ChatBot Container */
+.chatbotContainer {
+  border: 1px solid #0000000d;
+  border-top: 0;
+  right: calc(1.5rem + 64px + 12px); /* 1.5rem (right-6) + 64px (bubble) + 12px gap */
+}
+
+/* Triangular Arrow Pointer */
+.arrowPointer {
+  right: -8px; /* Half of 16px square rotated 45deg */
+  bottom: 5%;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  transform: rotate(45deg);
+  border: 1px solid #0000000d;
+  border-left: none;
+  border-bottom: none;
+  z-index: 1;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid black;
+}
+
+/* Input Container */
+.inputContainer {
+  background-color: #e0e2e5;
+  height: 48px;
+  position: relative;
+}
+
+.inputUnderline {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.inputWrapper {
+  height: 48px;
+}
+
+.input {
+  height: 48px;
+}
+
+/* Send Button */
+.sendButton {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+/* Loading Animation - Staggered Bounce */
+.loadingDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgb(156, 163, 175); /* gray-400 */
+  border-radius: 9999px;
+  animation: bounce 1s infinite;
+}
+
+.loadingDot:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.loadingDot:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.loadingDot:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+}

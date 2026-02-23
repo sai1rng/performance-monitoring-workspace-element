@@ -1,0 +1,56 @@
+.notification-list-original {
+  max-height: 300px;
+  /* Adjust height to fit your design */
+  overflow-y: auto;
+  padding-right: 4px;
+  position: fixed;
+  top: 4rem;
+  right: 2rem;
+  z-index: 9999;
+  width: 40%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-list {
+  max-height: 400px; /* Adjust height to fit your design */
+  overflow-y: auto;
+  padding-right: 4px; /* Avoid scrollbar overlap */
+  position: fixed;
+  top: 4rem;
+  right: 2rem;
+  width: 40%;
+  border: 1px solid #a8a8a8;
+  border-radius: 6px;
+  background-color: #eaeaea;
+}
+
+/* Optional: nice scrollbar styling */
+.notification-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notification-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.notification-list::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.show-more-button {
+  width: 150px; /* smaller width */
+  padding: 2px;
+  border: none;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block; /* make it a block element so margin auto works */
+  margin: 10px auto; /* center horizontally with vertical spacing */
+  border-radius: 5px;
+}

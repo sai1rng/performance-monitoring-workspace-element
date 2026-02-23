@@ -1,0 +1,38 @@
+/* Variant Status Tooltip Styles */
+.variantStatusTooltip {
+  background-color: var(--bosch-white, #ffffff);
+  border: 1px solid var(--bosch-gray-80, #c1c7cc);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  font-size: 14px;
+  min-width: 220px;
+  z-index: 1000;
+}
+
+.tooltipTitle {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--bosch-gray-10, #1a1c1d);
+  font-size: 14px;
+}
+
+.statusList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statusItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+}
+
+.statusText {
+  font-weight: 400;
+  color: var(--bosch-gray-15, #232628);
+  font-size: 13px;
+  line-height: 1.4;
+}

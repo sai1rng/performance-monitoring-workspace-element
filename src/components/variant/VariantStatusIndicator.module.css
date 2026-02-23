@@ -1,0 +1,26 @@
+.statusIndicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.statusIndicatorGreen {
+  background-color: var(--bosch-green-50);
+}
+
+.statusIndicatorRed {
+  background-color: var(--bosch-red-50);
+}
+
+.statusIndicatorBlue {
+  background-color: var(--bosch-blue-50);
+}
+
+.statusIndicatorYellow {
+  background-color: var(--bosch-yellow-85);
+}
+
+.statusIndicatorGray {
+  background-color: var(--bosch-gray-50);
+}

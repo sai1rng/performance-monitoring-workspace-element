@@ -1,0 +1,8 @@
+.assignee-list {
+  max-height: 170px; /* adjust to fit your popup */
+  overflow-y: auto;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #eaeaea;
+}
